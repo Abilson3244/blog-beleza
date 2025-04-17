@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffafc;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  header {
+    background: #f49ac2;
+    color: white;
+    padding: 20px 0;
+  }
+  header h1 {
+    margin-bottom: 10px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  #menuToggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+  }
+  .banner {
+    background: #ffe2ec;
+    padding: 40px 0;
+    text-align: center;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .posts {
+    flex: 3;
+  }
+  .post {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #e9e9e9;
+  }
+  .post h3 {
+    margin-bottom: 10px;
+  }
+  .sidebar {
+    flex: 1;
+    padding-left: 20px;
+  }
+  .sidebar .ad-space {
+    background: #ffddee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  footer {
+    background: #f49ac2;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #f49ac2;
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      width: 200px;
+      padding: 10px;
+    }
+    nav ul.show {
+      display: flex;
+    }
+    #menuToggle {
+      display: block;
+    }
+    main {
+      flex-direction: column;
+    }
+    .sidebar {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
